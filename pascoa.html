@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cardapio de Pascoa da Doce Essencia com ovos, kits e sobremesas artesanais.">
+    <title>Cardapio de Pascoa | Doce Essencia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pascoa.css">
+</head>
+<body>
+    <header class="hero" id="topo">
+        <nav class="nav container">
+            <a class="logo" href="#topo">Doce Essencia</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#cardapio">Cardapio</a>
+                <a href="#destaques">Destaques</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">Menu</button>
+        </nav>
+
+        <div class="hero-content container reveal">
+            <p class="badge">Temporada de Pascoa 2026</p>
+            <h1>Cardapio Especial para celebrar com sabor e afeto</h1>
+            <p>
+                Ovos de colher, kits corporativos e sobremesas artesanais para empresas
+                que querem presentear clientes e colaboradores com memorias deliciosas.
+            </p>
+            <a class="cta" href="#cardapio">Ver Cardapio</a>
+        </div>
+        <div class="hero-shape" aria-hidden="true"></div>
+    </header>
+
+    <main>
+        <section class="filters container reveal">
+            <h2>Escolha por categoria</h2>
+            <div class="filter-group" role="group" aria-label="Filtros do cardapio">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="ovos">Ovos</button>
+                <button class="filter-btn" data-filter="kits">Kits</button>
+                <button class="filter-btn" data-filter="sobremesas">Sobremesas</button>
+            </div>
+        </section>
+
+        <section class="menu container" id="cardapio">
+            <article class="menu-card reveal" data-category="ovos">
+                <h3>Ovo Trufado Classico</h3>
+                <p>Casca de chocolate ao leite com recheio cremoso de brigadeiro gourmet.</p>
+                <span>R$ 79,90</span>
+            </article>
+
+            <article class="menu-card reveal" data-category="ovos">
+                <h3>Ovo Crocante Premium</h3>
+                <p>Chocolate meio amargo, praliné de castanhas e toque de flor de sal.</p>
+                <span>R$ 94,90</span>
+            </article>
+
+            <article class="menu-card reveal" data-category="kits">
+                <h3>Kit Corporativo Essencia</h3>
+                <p>Mini ovo + trufas + cartao personalizado para a sua marca.</p>
+                <img src="https://i.pinimg.com/736x/c2/0c/fc/c20cfc1a9d274d7e10d5f4e2f2aaf876.jpg" alt="Kit corporativo de Pascoa com chocolates" class="card-image">
+                <span>R$ 59,90</span>
+            </article>
+
+            <article class="menu-card reveal" data-category="kits">
+                <h3>Kit Premium para Clientes</h3>
+                <p>Ovo de 350g, drageas artesanais e embalagem presenteavel.</p>
+                <span>R$ 129,90</span>
+            </article>
+
+            <article class="menu-card reveal" data-category="sobremesas">
+                <h3>Colomba Artesanal Recheada</h3>
+                <p>Massa leve com gotas de chocolate e recheio de creme de avela.</p>
+                <span>R$ 69,90</span>
+            </article>
+
+            <article class="menu-card reveal" data-category="sobremesas">
+                <h3>Brownie de Pascoa</h3>
+                <p>Brownie intenso com cobertura de ganache e mini ovos coloridos.</p>
+                <span>R$ 24,90</span>
+            </article>
+        </section>
+
+        <section class="highlight" id="destaques">
+            <div class="container reveal">
+                <h2>Encomendas corporativas com identidade da sua empresa</h2>
+                <p>
+                    Personalizamos etiquetas, cartoes e kits de acordo com a campanha da sua marca.
+                    Atendimento especial para pedidos em volume.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato"> // Contato e informacoes adicionais
+        <div class="container">
+            <h2>Fale com a Doce Essencia</h2>
+            <p>WhatsApp: (11) 99999-9999 | E-mail: contato@doceessencia.com.br</p>
+            <a class="cta secondary" href="#topo">Voltar ao topo</a>
+        </div>
+    </footer>
+
+    <script src="pascoa.js"></script>
+</body>
+</html>
